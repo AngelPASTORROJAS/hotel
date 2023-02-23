@@ -1,13 +1,15 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+const express = require("express");
+const hotelRoute = require('./hotel/routes/hotel.route');
+
 const app = express();
 
-// Parse incoming request bodies in a middleware before your handlers, available under the req.body property
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use('/hotel', hotelRoute.routes);
 
-// Start the server
-const port = 3000;
-app.listen(port, () => {
-    console.log(`Server started on port ${port}.`);
+// const bodyParser = require("body-parser");
+// Parse incoming request bodies in a middleware before your handlers, available under the req.body property
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json());
+
+app.listen(3000, () => {
+  console.log(`Server started on port 3000.`);
 });
