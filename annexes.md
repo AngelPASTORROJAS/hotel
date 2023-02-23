@@ -1,4 +1,4 @@
-organisation de fichier:
+**organisation de fichier:**
 ```txt
 /nameprojet
     /routes
@@ -9,4 +9,13 @@ organisation de fichier:
         controller2.js
 ```
 
-****
+**consigne**
+```txt
+Un hôtel fait appel à vous pour mettre en place une nouveau système de réservation.Il vous demande une première version qui va permettre :
+    - à l’hôtel de lister l’ensemble de ses clients
+    - à l’hôtel de récupérer les informations d’un client spécifique
+    - à ses clients de récupérer les informations de l’hôtel
+    - à ses clients de lister l’ensemble des chambres de l’hôtel
+    - à ses clients de récupérer les informations d’une chambre spécifique
+    - à ses clients de louer une chambre 
+```
