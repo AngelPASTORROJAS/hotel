@@ -15,7 +15,7 @@ Un hôtel fait appel à vous pour mettre en place une nouveau système de réser
 - [] à l’hôtel de lister l’ensemble de ses clients
 - [] à l’hôtel de récupérer les informations d’un client spécifique
 - [x] à ses clients de récupérer les informations de l’hôtel
-- [] à ses clients de lister l’ensemble des chambres de l’hôtel
+- [x] à ses clients de lister l’ensemble des chambres de l’hôtel
 - [] à ses clients de récupérer les informations d’une chambre spécifique
 - [] à ses clients de louer une chambre 
 ```
