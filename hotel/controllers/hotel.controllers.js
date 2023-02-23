@@ -1,14 +1,19 @@
-
-const usersService = require('../services/hotel.service');
+const hotelService = require("../services/hotel.service");
 // const {Hotel} = require('../../model/hotel');
 
 function getHotel(req, res) {
-    const hotel = usersService.getHotel();
-    res.send({
-        hotel: hotel
-    });
+  res.send({
+    hotel: hotelService.getHotel(),
+  });
+}
+
+function getChambres(req, res) {
+  res.send({
+    chambres: hotelService.getChambres(),
+  });
 }
 
 module.exports = {
-    getHotel
-}
+  getHotel,
+  getChambres,
+};
