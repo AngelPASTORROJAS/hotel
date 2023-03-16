@@ -4,7 +4,7 @@ const { Client, ClientList } = require('./../../model/client');
 /* Importing the client.json file. */
 const clientJson = require("../../data/client.json");
 
-/* Calling the function       the variable getClients. */
+/* Calling the function to create the variable dataClient. */
 const dataClient = getClients();
 
 /**
@@ -23,7 +23,8 @@ function getClients() {
  * @returns {Client | undefined} the result of the find function.
  */
 function getClientById(id) {
-  return dataClient.clients.find(client=>{client.id = id});
+  console.log(dataClient.clients.find(client => client.id === id));
+  return dataClient.clients.find(client => client.id === id);
 }
 
 module.exports = {

@@ -6,8 +6,8 @@ routes.get("", function (req, res) {
   clientController.getClients(req, res);
 });
 
-routes.get("/chambres", function (req, res) {
-  clientController.getChambres(req, res);
+routes.get("/:id", function (req, res) {
+  clientController.getClientById(req, res);
 });
 
 module.exports = {
