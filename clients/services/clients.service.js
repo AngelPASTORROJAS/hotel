@@ -19,11 +19,10 @@ function getClients() {
 
 /**
  * It returns the client object from the clients array that has the same id as the id parameter
- * @param {number} id - The id of the client you want to get.
+ * @param {string} id - The id of the client you want to get.
  * @returns {Client | undefined} the result of the find function.
  */
 function getClientById(id) {
-  console.log(dataClient.clients.find(client => client.id === id));
   return dataClient.clients.find(client => client.id === id);
 }
 
