@@ -1,5 +1,5 @@
 /* Importing the Client and ClientList classes from the client.js file. */
-const { Client, ClientList } = require('./../../model/client');
+const { Client, ClientList } = require("./../../model/client");
 
 /* Importing the client.json file. */
 const clientJson = require("../../data/client.json");
@@ -18,14 +18,16 @@ function getClients() {
 }
 
 /**
- * It returns the client object from the clients array that has the same id as the id parameter
+ * It returns the first client object in the clients array whose id property is equal to the id
+ * argument
  * @param {string} id - The id of the client you want to get.
- * @returns {Client | undefined} the result of the find function.
+ * @returns {Client | undefined} The client object with the id of 1.
  */
 function getClientById(id) {
-  return dataClient.clients.find(client => client.id = id);
+  return dataClient.clients.find((client) => (client.id = id));
 }
 
+/* Exporting the functions getClients and getClientById. */
 module.exports = {
   getClients,
   getClientById,
