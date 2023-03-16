@@ -1,5 +1,6 @@
 /* Importing the express module and creating a router object. */
 const express = require("express");
+/* Creating a router object. */
 const routes = express.Router();
 
 /* Importing the clientController.js file. */

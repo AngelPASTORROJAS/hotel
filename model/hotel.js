@@ -1,4 +1,4 @@
-export class Hotel {
+class Hotel {
   /**
    * The constructor function is a function that is called when a new object is created.
    * @param {String} name - The name of the hotel
@@ -16,7 +16,7 @@ export class Hotel {
   }
 }
 
-export class Location {
+class Location {
   /**
    * The constructor function is a special function that is used to create and initialize an object
    * created within a class.
@@ -35,7 +35,7 @@ export class Location {
   }
 }
 
-export class Contact {
+class Contact {
   /**
    * The constructor function is a special function that is used to create and initialize an object
    * created within a class.
@@ -48,7 +48,7 @@ export class Contact {
   }
 }
 
-export class Room {
+class Room {
   /**
    * The constructor function is a function that is called when an object is created from a class.
    * @param {Number} id - The unique id of the room.
@@ -67,3 +67,10 @@ export class Room {
     this.price = price;
   }
 }
+
+module.exports = {
+  Hotel,
+  Location,
+  Contact,
+  Room,
+};
