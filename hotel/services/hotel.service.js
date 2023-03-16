@@ -6,7 +6,6 @@ const hotel = getHotel();
 function getHotel() {
   const str = JSON.stringify(hotelJson);
   const obj = JSON.parse(str);
-  console.log(obj);
   return obj;
 }
 

@@ -28,3 +28,9 @@ class ClientList {
     );
   }
 }
+
+// Export the classes for other files to use
+module.exports = {
+  Client,
+  ClientList
+};

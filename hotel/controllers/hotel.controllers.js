@@ -1,13 +1,13 @@
 const hotelService = require("../services/hotel.service");
 // const {Hotel} = require('../../model/hotel');
 
-function getHotel(req, res) {
+function getHotel(_req, res) {
   res.send({
     hotel: hotelService.getHotel(),
   });
 }
 
-function getChambres(req, res) {
+function getChambres(_req, res) {
   res.send({
     chambres: hotelService.getChambres(),
   });
