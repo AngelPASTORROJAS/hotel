@@ -23,7 +23,7 @@ function getClients() {
  * @returns {Client | undefined} the result of the find function.
  */
 function getClientById(id) {
-  return dataClient.clients.find(client => client.id === id);
+  return dataClient.clients.find(client => client.id = id);
 }
 
 module.exports = {
